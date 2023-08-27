@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #f1f0f6;
+  --dark-grey: #8d8d8d;
+  --light: #fff;
+  --dark: #000;
+  --green: #81d43a;
+  --light-green: #e3ffcb;
+  --blue: #1775f1;
+  --light-blue: #d0e4ff;
+  --dark-blue: #0c5fcd;
+  --pink: #ef1f76;
+  --red: #ff0000;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead tr {
+  background: #e9edf2;
+}
+
+table thead th {
+  padding: 1rem 0rem;
+  text-align: left;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+table thead th:first-child {
+  padding-left: 1rem;
+}
+
+table tbody td {
+  padding: 1rem 0rem;
+  color: #444;
+}
+
+table tbody td:first-child {
+  padding-left: 1rem;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.client_info .credit {
+  color: var(--green);
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dee2e8;
+}
+
+.client_info h4 {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.client_info small {
+  color: #777;
+}
+
+.actions span {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.paid {
+  text-align: center;
+  font-weight: 600;
+  color: var(--light);
+  background: var(--green);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.pending {
+  text-align: center;
+  font-weight: 600;
+  color: var(--light);
+  background: var(--pink);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.unsuccessful {
+  text-align: center;
+  font-weight: 600;
+  color: var(--light);
+  background: var(--red);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+}

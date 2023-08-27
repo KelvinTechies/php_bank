@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--grey: #F1F0F6;
+	--dark-grey: #8D8D8D;
+	--light: #fff;
+	--dark: #000;
+	--green: #81D43A;
+	--light-green: #E3FFCB;
+	--blue: #1775F1;
+	--light-blue: #D0E4FF;
+	--dark-blue: #0C5FCD;
+	--pink: #EF1F76;
+    --red: #ff0000;
+}
+
+main .content-data {
+	margin-top: 20px;
+	flex-grow: 1;
+	flex-basis: 400px;
+	padding: 20px;
+	background: var(--light);
+	border-radius: 10px;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+}
+
+.content-data .card{
+	width: 500px;
+	height: 300px;
+	color: var(--light);
+	cursor: pointer;
+	perspective: 1000px;
+}
+
+.content-data .card .card-inner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+
+.content-data .card .card-inner .front, .back{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	z-index: 1;
+	backface-visibility: hidden;
+}
+
+
+
+.map-img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-num{
+	font-size: 35px;
+	margin-top: 40px;
+}
+
+.card-holder{
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+.name{
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.bar{
+	background: var(--dark);
+	margin-left: -30px;
+	margin-right: -30px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.card-cvv{
+	margin-top: 15px;
+}
+
+.card-cvv div{
+	flex: 1;
+}
+
+.card-cvv img{
+	width: 100%;
+	display: block;
+	line-height: 0;
+}
+
+.card-cvv p{
+	background: var(--light);
+	color: var(--dark);
+	font-size: 22px;
+	padding: 10px 20px;
+}
+
+.card-text{
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.sign{
+	margin-top: 30px;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.card:hover .card-inner{
+	transform: rotateY(-180deg);
+}
